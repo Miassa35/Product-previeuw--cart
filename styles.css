@@ -5,13 +5,14 @@
     --clr-neutral-two:  hsl(228, 12%, 48%);
     --clr-neutral-three: hsl(0, 0%, 100%);
     --fs-body: .875rem;
-    --ff-body-one: Montserrat, sans-serif;
-    --ff-body-two: Fraunces, sans-serif;
+    --ff-body-one: 'Montserrat', sans-serif;
+    --ff-body-two: 'Fraunces', serif;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 @media (max-width:1440px){
     body{
@@ -39,10 +40,9 @@
         flex-basis: 50%;
         padding: 2em;
     }
-    h2{
-        font-size: var(--fs-body);
-        font-family: var(--ff-body-two);
-        font-weight: 400;
+    .pre-heading{
+        font-size: calc(1* var(--fs-body));;
+        font-family: var(--ff-body-one);
         letter-spacing: .2em;
         text-transform: uppercase;
         color: var(--clr-neutral-two);
@@ -58,7 +58,7 @@
     p{
         color: var(--clr-neutral-two);
         font-size: calc(1.1* var(--fs-body));;
-        line-height: 1.3em;
+        line-height: 1.4em;
     }
     .align__prices{
         display: flex;
@@ -100,7 +100,7 @@
 @media (min-width:600px) and (max-width:1420px){
     .btn{
         font-size: calc(.98* var(--fs-body));
-}
+    }
 }
 @media (max-width: 600px){
     .container{
@@ -123,3 +123,4 @@
        justify-content: center;
     }
 }
+
